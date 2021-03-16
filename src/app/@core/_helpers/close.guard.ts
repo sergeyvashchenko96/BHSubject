@@ -10,6 +10,6 @@ export class CloseGuard implements CanActivate {
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-   return JSON.parse(localStorage.getItem('access') || 'false')
+   return JSON.parse(localStorage.getItem('access') || 'false');
   }
 }

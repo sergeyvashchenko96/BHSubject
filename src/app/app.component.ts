@@ -6,7 +6,7 @@ import {FormBuilder, FormGroup} from "@angular/forms";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   form: FormGroup;
 
   constructor(fb: FormBuilder) {
@@ -15,11 +15,6 @@ export class AppComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-    this.form
-  }
-
-  // tslint:disable-next-line:typedef
   submit(): void {
     const value = {...this.form.value};
     console.log(value);

@@ -7,6 +7,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CloseComponent} from './pages/close/close.component';
 import {ClickerComponent} from "./pages/clicker/clicker.component";
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import {ClickerComponent} from "./pages/clicker/clicker.component";
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
